@@ -24,20 +24,23 @@ struct ContentView: View {
         HStack {
             Button {
                 Task {
-                  await racingViewModel.filterRacesFor(nil) // nil represents "All"
+                    await racingViewModel.filterRacesFor(nil)
                 }
             } label: {
                 VStack(spacing: 0) {
                     HStack {
                         Image(systemName: racingViewModel.searchTokens.isEmpty ? "checkmark.square.fill" : "square")
                             .foregroundColor(racingViewModel.searchTokens.isEmpty ? .blue : .gray)
+                            .accessibilityHidden(true)
                         Text("All")
                     }
                 }
             }
             .frame(maxWidth: .infinity)
             .disabled(racingViewModel.searchTokens.isEmpty)
-            .accessibilityLabel("Filter all races")
+            .accessibilityLabel("All races")
+            .accessibilityValue(racingViewModel.searchTokens.isEmpty ? "Selected" : "Not selected")
+            .accessibilityAddTraits(.isButton)
             
             // Individual category filters
             ForEach(RaceCategory.allCases) { cat in
@@ -50,11 +53,12 @@ struct ContentView: View {
                         HStack(alignment: .center) {
                             Image(systemName: racingViewModel.searchTokens.contains(cat) ? "checkmark.square.fill" : "square")
                                 .foregroundColor(racingViewModel.searchTokens.contains(cat) ? .blue : .gray)
+                                .accessibilityHidden(true)
                             VStack(spacing: 1) {
                                 Image(cat.iconName)
                                     .resizable()
                                     .frame(width: filterImageSize, height: filterImageSize)
-                                    .accessibilityLabel(Text(cat.name))
+                                    .accessibilityHidden(true)
                                 Text(cat.name)
                                     .font(.caption2)
                             }
@@ -62,7 +66,9 @@ struct ContentView: View {
                     }
                 }
                 .frame(maxWidth: .infinity)
-                .accessibilityLabel("Filter races for \(cat.name)")
+                .accessibilityLabel("\(cat.name) races")
+                .accessibilityValue(racingViewModel.searchTokens.contains(cat) ? "Selected" : "Not selected")
+                .accessibilityAddTraits(.isButton)
             }
         }
         .fixedSize(horizontal: false, vertical: true)
@@ -76,9 +82,10 @@ struct ContentView: View {
                         Image(imageName)
                             .resizable()
                             .frame(width: imageSize, height: imageSize)
+                            .accessibilityHidden(true)
                     }
                     VStack(alignment: .leading) {
-                        let raceDetails = raceSummary.meetingName + " " + String(raceSummary.raceNumber)
+                        let raceDetails = raceSummary.meetingName + " Race " + String(raceSummary.raceNumber)
                         
                         Text(raceDetails)
                             .lineLimit(1)
@@ -88,7 +95,11 @@ struct ContentView: View {
                     }
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
-                .accessibilityLabel(Text("\(raceSummary.meetingName)"))
+                .accessibilityElement(children: .combine)
+                .accessibilityLabel("\(raceSummary.meetingName) Race \(raceSummary.raceNumber)")
+                .accessibilityValue(raceSummary.advertisedStart.isPassedStartTime ? 
+                    "Started \(Date(timeIntervalSince1970: TimeInterval(raceSummary.advertisedStart.seconds)), style: .relative)" :
+                    "Starting in \(Date(timeIntervalSince1970: TimeInterval(raceSummary.advertisedStart.seconds)), style: .relative)")
             }
         }
     }

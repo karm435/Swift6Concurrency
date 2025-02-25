@@ -1,6 +1,5 @@
-// I would probably create a separate package for this. But for simplicity for this exercise I am putting it in the AppUtils package.
-// I personally don't like the AppUtils package as it becomes a dumping ground of anything that does not fit anywhere. 
-
+// I would probably create a separate package for this. But for simplicity for this exercise I am putting it in here.
+// This is for local testing, would probably use a server side logger for this.
 import Foundation
 import os
 
