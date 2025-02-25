@@ -26,3 +26,6 @@ Using the Factory package to manage the project dependencies. You can find the p
  
 ## Accessibility 
 Test using the Xcode Developer tools -> Accessibility Inspector for the Voice over. 
+
+## CI/CD
+The project uses the configuration files and have added different configurations in the project for different environments. During the CI/CD we can use these different configurations to use pass on values for the secrets or properties specific to the environment.
