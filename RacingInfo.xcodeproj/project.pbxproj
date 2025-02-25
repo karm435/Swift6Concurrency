@@ -20,11 +20,8 @@
 		AE7369122A4A4FDD009442AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE7369112A4A4FDD009442AA /* Assets.xcassets */; };
 		AE7369152A4A4FDD009442AA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE7369142A4A4FDD009442AA /* Preview Assets.xcassets */; };
 		AE73691F2A4A4FDE009442AA /* RacingModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE73691E2A4A4FDE009442AA /* RacingModelTests.swift */; };
-		AE7369292A4A4FDE009442AA /* RecingInfoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7369282A4A4FDE009442AA /* RecingInfoUITests.swift */; };
-		AE73692B2A4A4FDE009442AA /* RecingInfoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE73692A2A4A4FDE009442AA /* RecingInfoUITestsLaunchTests.swift */; };
 		AE8C63FA2D6C410000EF59C9 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8C63F92D6C410000EF59C9 /* SampleData.swift */; };
 		AE8C63FC2D6C429000EF59C9 /* RacingRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8C63FB2D6C428B00EF59C9 /* RacingRepository.swift */; };
-		AE8C64022D6D322E00EF59C9 /* MockRacingRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8C64012D6D322800EF59C9 /* MockRacingRepository.swift */; };
 		AE8E95D42A4A68BD0026CEAF /* RacingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8E95D32A4A68BD0026CEAF /* RacingViewModel.swift */; };
 		AE9DA3812D6C1A8D00AAA1B0 /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = AE9DA3802D6C1A8D00AAA1B0 /* Factory */; };
 		AE9DA3842D6C1AB000AAA1B0 /* DependencyRegistrations.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9DA3832D6C1AAB00AAA1B0 /* DependencyRegistrations.swift */; };
@@ -40,7 +37,9 @@
 		AECD57CC2D6D349100040AC3 /* RaceSummaries.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECD57C12D6D349100040AC3 /* RaceSummaries.swift */; };
 		AECD57CD2D6D349100040AC3 /* RaceCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECD57BF2D6D349100040AC3 /* RaceCategory.swift */; };
 		AECD57CE2D6D349100040AC3 /* TrackCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECD57C42D6D349100040AC3 /* TrackCondition.swift */; };
-		AED6D3062A60AB2800A5C3AE /* MockNetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED6D3052A60AB2800A5C3AE /* MockNetworkClient.swift */; };
+		AEFCB02C2D6D6E8C0093E73A /* MockNetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFCB02B2D6D6E8C0093E73A /* MockNetworkClient.swift */; };
+		AEFCB02E2D6D6FF10093E73A /* RaceSummary+Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFCB02D2D6D6FE90093E73A /* RaceSummary+Mocks.swift */; };
+		AEFCB0312D6D93520093E73A /* AsyncAlgorithms in Frameworks */ = {isa = PBXBuildFile; productRef = AEFCB0302D6D93520093E73A /* AsyncAlgorithms */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,11 +76,8 @@
 		AE73691A2A4A4FDE009442AA /* RacingInfoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RacingInfoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE73691E2A4A4FDE009442AA /* RacingModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RacingModelTests.swift; sourceTree = "<group>"; };
 		AE7369242A4A4FDE009442AA /* RacingInfoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RacingInfoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AE7369282A4A4FDE009442AA /* RecingInfoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecingInfoUITests.swift; sourceTree = "<group>"; };
-		AE73692A2A4A4FDE009442AA /* RecingInfoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecingInfoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		AE8C63F92D6C410000EF59C9 /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
 		AE8C63FB2D6C428B00EF59C9 /* RacingRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RacingRepository.swift; sourceTree = "<group>"; };
-		AE8C64012D6D322800EF59C9 /* MockRacingRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRacingRepository.swift; sourceTree = "<group>"; };
 		AE8E95CB2A4A64220026CEAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		AE8E95D32A4A68BD0026CEAF /* RacingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RacingViewModel.swift; sourceTree = "<group>"; };
 		AE9DA3832D6C1AAB00AAA1B0 /* DependencyRegistrations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyRegistrations.swift; sourceTree = "<group>"; };
@@ -98,7 +94,8 @@
 		AECD57C22D6D349100040AC3 /* RaceSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceSummary.swift; sourceTree = "<group>"; };
 		AECD57C32D6D349100040AC3 /* RaceSummeriesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceSummeriesResponse.swift; sourceTree = "<group>"; };
 		AECD57C42D6D349100040AC3 /* TrackCondition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCondition.swift; sourceTree = "<group>"; };
-		AED6D3052A60AB2800A5C3AE /* MockNetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockNetworkClient.swift; sourceTree = "<group>"; };
+		AEFCB02B2D6D6E8C0093E73A /* MockNetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkClient.swift; sourceTree = "<group>"; };
+		AEFCB02D2D6D6FE90093E73A /* RaceSummary+Mocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RaceSummary+Mocks.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +104,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE9DA3812D6C1A8D00AAA1B0 /* Factory in Frameworks */,
+				AEFCB0312D6D93520093E73A /* AsyncAlgorithms in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,7 +155,6 @@
 				AEA571952D6C1307003292D4 /* Secrets.Prod.xcconfig */,
 				AE73690C2A4A4FDB009442AA /* RecingInfo */,
 				AE73691D2A4A4FDE009442AA /* RecingInfoTests */,
-				AE7369272A4A4FDE009442AA /* RecingInfoUITests */,
 				AE73690B2A4A4FDB009442AA /* Products */,
 				AE9CA46B2A4A5E9800B42453 /* Frameworks */,
 			);
@@ -211,15 +208,6 @@
 			path = RecingInfoTests;
 			sourceTree = "<group>";
 		};
-		AE7369272A4A4FDE009442AA /* RecingInfoUITests */ = {
-			isa = PBXGroup;
-			children = (
-				AE7369282A4A4FDE009442AA /* RecingInfoUITests.swift */,
-				AE73692A2A4A4FDE009442AA /* RecingInfoUITestsLaunchTests.swift */,
-			);
-			path = RecingInfoUITests;
-			sourceTree = "<group>";
-		};
 		AE8C63F82D6C40FB00EF59C9 /* Preview */ = {
 			isa = PBXGroup;
 			children = (
@@ -239,7 +227,8 @@
 		AE8C64002D6D321600EF59C9 /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
-				AE8C64012D6D322800EF59C9 /* MockRacingRepository.swift */,
+				AEFCB02D2D6D6FE90093E73A /* RaceSummary+Mocks.swift */,
+				AEFCB02B2D6D6E8C0093E73A /* MockNetworkClient.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -278,7 +267,6 @@
 		AED6D3042A60AB2000A5C3AE /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
-				AED6D3052A60AB2800A5C3AE /* MockNetworkClient.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -302,6 +290,7 @@
 			name = RacingInfo;
 			packageProductDependencies = (
 				AE9DA3802D6C1A8D00AAA1B0 /* Factory */,
+				AEFCB0302D6D93520093E73A /* AsyncAlgorithms */,
 			);
 			productName = RecingInfo;
 			productReference = AE73690A2A4A4FDB009442AA /* RacingInfo.app */;
@@ -380,6 +369,7 @@
 			packageReferences = (
 				AE9DA37F2D6C1A8D00AAA1B0 /* XCRemoteSwiftPackageReference "Factory" */,
 				AE6D82DD2D6C3122009F2129 /* XCRemoteSwiftPackageReference "SwiftLint" */,
+				AEFCB02F2D6D93520093E73A /* XCRemoteSwiftPackageReference "swift-async-algorithms" */,
 			);
 			productRefGroup = AE73690B2A4A4FDB009442AA /* Products */;
 			projectDirPath = "";
@@ -430,6 +420,7 @@
 				AECD57C62D6D349100040AC3 /* AdvertisedStart.swift in Sources */,
 				AECD57C72D6D349100040AC3 /* RaceSummeriesResponse.swift in Sources */,
 				AECD57C82D6D349100040AC3 /* DistanceType.swift in Sources */,
+				AEFCB02E2D6D6FF10093E73A /* RaceSummary+Mocks.swift in Sources */,
 				AECD57C92D6D349100040AC3 /* GetRacesResponse.swift in Sources */,
 				AECD57CA2D6D349100040AC3 /* RaceSummary.swift in Sources */,
 				AECD57CB2D6D349100040AC3 /* RaceForm.swift in Sources */,
@@ -440,6 +431,7 @@
 				AE61FAF72D6D36D900FFEAFA /* NetworkClientProtocol.swift in Sources */,
 				AE61FAFD2D6D36E700FFEAFA /* JsonLoader.swift in Sources */,
 				AE61FAFE2D6D36E700FFEAFA /* RacingLogger.swift in Sources */,
+				AEFCB02C2D6D6E8C0093E73A /* MockNetworkClient.swift in Sources */,
 				AE61FAF82D6D36D900FFEAFA /* HttpMethod.swift in Sources */,
 				AE61FAF92D6D36D900FFEAFA /* NetworkClient.swift in Sources */,
 				AECD57CE2D6D349100040AC3 /* TrackCondition.swift in Sources */,
@@ -449,7 +441,6 @@
 				AE73690E2A4A4FDB009442AA /* RecingInfoApp.swift in Sources */,
 				AE8C63FA2D6C410000EF59C9 /* SampleData.swift in Sources */,
 				AE8E95D42A4A68BD0026CEAF /* RacingViewModel.swift in Sources */,
-				AE8C64022D6D322E00EF59C9 /* MockRacingRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,7 +449,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE73691F2A4A4FDE009442AA /* RacingModelTests.swift in Sources */,
-				AED6D3062A60AB2800A5C3AE /* MockNetworkClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,8 +456,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE73692B2A4A4FDE009442AA /* RecingInfoUITestsLaunchTests.swift in Sources */,
-				AE7369292A4A4FDE009442AA /* RecingInfoUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -683,7 +671,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AEA571912D6C12E2003292D4 /* Secrets.local.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -709,7 +696,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AEA571932D6C12FC003292D4 /* Secrets.UAT.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -735,7 +721,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AEA571912D6C12E2003292D4 /* Secrets.local.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = TWUTEK8LCV;
@@ -761,7 +746,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AEA571932D6C12FC003292D4 /* Secrets.UAT.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = TWUTEK8LCV;
@@ -878,7 +862,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AEA571952D6C1307003292D4 /* Secrets.Prod.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -904,7 +887,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AEA571952D6C1307003292D4 /* Secrets.Prod.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = TWUTEK8LCV;
@@ -988,6 +970,14 @@
 				minimumVersion = 2.4.3;
 			};
 		};
+		AEFCB02F2D6D93520093E73A /* XCRemoteSwiftPackageReference "swift-async-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-async-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.3;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1000,6 +990,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = AE9DA37F2D6C1A8D00AAA1B0 /* XCRemoteSwiftPackageReference "Factory" */;
 			productName = Factory;
+		};
+		AEFCB0302D6D93520093E73A /* AsyncAlgorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AEFCB02F2D6D93520093E73A /* XCRemoteSwiftPackageReference "swift-async-algorithms" */;
+			productName = AsyncAlgorithms;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

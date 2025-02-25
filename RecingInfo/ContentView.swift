@@ -24,7 +24,7 @@ struct ContentView: View {
         HStack {
             Button {
                 Task {
-                  await racingViewModel.updateSearch(cat: nil) // nil represents "All"
+                  await racingViewModel.filterRacesFor(nil) // nil represents "All"
                 }
             } label: {
                 VStack(spacing: 0) {
@@ -43,7 +43,7 @@ struct ContentView: View {
             ForEach(RaceCategory.allCases) { cat in
                 Button {
                     Task {
-                      await racingViewModel.updateSearch(cat: cat)
+                        await racingViewModel.filterRacesFor(cat)
                     }
                 } label: {
                     VStack(spacing: 0) {
