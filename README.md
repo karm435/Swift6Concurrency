@@ -16,6 +16,9 @@ Using the Factory package to manage the project dependencies. You can find the p
  ### House keeping
  Use Swift lint to force styling and conventions in your code. you can read more on https://swiftpackageindex.com/realm/SwiftLint about this package. I have left some of the warnings as it is for swift lint to demo that swift lint is working :) 
  
+ ### Previews
+ Previews are integral part of development and making sure that previews are working during development is important. The file SampleData contains the code to setup the data for the previews and then it uses the preview traits to pass that data and setup the container to use mock network client so that your previews does not make network call. 
+ 
  ## Unit Testing
  Using the Swift tesitng to test the code.There is only one example I have added and I think that one shows how to test the viewmodel and use AsyncChannel to signal  the Tasks so that we do not have to add any sleeps.
  Got the solution from 

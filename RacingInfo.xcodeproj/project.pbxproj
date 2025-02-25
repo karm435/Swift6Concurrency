@@ -38,6 +38,7 @@
 		AEFCB02C2D6D6E8C0093E73A /* MockNetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFCB02B2D6D6E8C0093E73A /* MockNetworkClient.swift */; };
 		AEFCB02E2D6D6FF10093E73A /* RaceSummary+Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFCB02D2D6D6FE90093E73A /* RaceSummary+Mocks.swift */; };
 		AEFCB0312D6D93520093E73A /* AsyncAlgorithms in Frameworks */ = {isa = PBXBuildFile; productRef = AEFCB0302D6D93520093E73A /* AsyncAlgorithms */; };
+		AEFCB0342D6D9AB80093E73A /* RacesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFCB0332D6D9AB80093E73A /* RacesListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +93,7 @@
 		AECD57C42D6D349100040AC3 /* TrackCondition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCondition.swift; sourceTree = "<group>"; };
 		AEFCB02B2D6D6E8C0093E73A /* MockNetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkClient.swift; sourceTree = "<group>"; };
 		AEFCB02D2D6D6FE90093E73A /* RaceSummary+Mocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RaceSummary+Mocks.swift"; sourceTree = "<group>"; };
+		AEFCB0332D6D9AB80093E73A /* RacesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RacesListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +170,7 @@
 		AE73690C2A4A4FDB009442AA /* RecingInfo */ = {
 			isa = PBXGroup;
 			children = (
+				AEFCB0322D6D9A9E0093E73A /* Views */,
 				AE61FAFC2D6D36E700FFEAFA /* AppUtils */,
 				AE61FAF42D6D36D900FFEAFA /* Network */,
 				AECD57C52D6D349100040AC3 /* Models */,
@@ -177,7 +180,6 @@
 				AE9DA3822D6C1A9900AAA1B0 /* Infrastructure */,
 				AE8E95CB2A4A64220026CEAF /* Info.plist */,
 				AE73690F2A4A4FDB009442AA /* ContentView.swift */,
-				AE8E95D32A4A68BD0026CEAF /* RacingViewModel.swift */,
 				AE73690D2A4A4FDB009442AA /* RecingInfoApp.swift */,
 				AE7369112A4A4FDD009442AA /* Assets.xcassets */,
 				AE7369132A4A4FDD009442AA /* Preview Content */,
@@ -263,6 +265,23 @@
 			children = (
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		AEFCB0322D6D9A9E0093E73A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AEFCB0352D6D9AF80093E73A /* RacesList */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AEFCB0352D6D9AF80093E73A /* RacesList */ = {
+			isa = PBXGroup;
+			children = (
+				AE8E95D32A4A68BD0026CEAF /* RacingViewModel.swift */,
+				AEFCB0332D6D9AB80093E73A /* RacesListView.swift */,
+			);
+			path = RacesList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -412,6 +431,7 @@
 			files = (
 				AECD57C62D6D349100040AC3 /* AdvertisedStart.swift in Sources */,
 				AECD57C72D6D349100040AC3 /* RaceSummeriesResponse.swift in Sources */,
+				AEFCB0342D6D9AB80093E73A /* RacesListView.swift in Sources */,
 				AECD57C82D6D349100040AC3 /* DistanceType.swift in Sources */,
 				AEFCB02E2D6D6FF10093E73A /* RaceSummary+Mocks.swift in Sources */,
 				AECD57C92D6D349100040AC3 /* GetRacesResponse.swift in Sources */,
