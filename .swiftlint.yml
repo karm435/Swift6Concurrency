@@ -1,0 +1,23 @@
+disabled_rules:
+  - trailing_whitespace
+  - line_length
+
+opt_in_rules:
+  - empty_count
+  - empty_string
+  - redundant_nil_coalescing
+  - switch_case_on_newline
+
+excluded:
+  - .build
+  - Package.swift
+
+identifier_name:
+  min_length: 2
+
+type_name:
+  min_length: 3
+
+function_parameter_count:
+  warning: 6
+  error: 8 
