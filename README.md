@@ -21,4 +21,5 @@ Using the Factory package to manage the project dependencies. You can find the p
  Got the solution from 
  https://forums.swift.org/t/reliably-testing-code-that-adopts-swift-concurrency/57304/64?page=4
  
-
+## Accessibility 
+Test using the Xcode Developer tools -> Accessibility Inspector for the Voice over. 
